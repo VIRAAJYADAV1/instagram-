@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Instagram private viewer pentest tool"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/instagram-private-viewer.git
+git push -u origin main
