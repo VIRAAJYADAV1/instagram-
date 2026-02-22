@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Private Viewer - Pentest Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Instagram Private Account Viewer</h1>
+        <p class="warning">Authorized Pentest Only | Session-based Access Required</p>
+        
+        <div class="input-section">
+            <input type="text" id="profileUrl" placeholder="https://www.instagram.com/username/" />
+            <button onclick="analyzeProfile()">🔍 Analyze Profile</button>
+        </div>
+
+        <div id="login-section" class="hidden">
+            <h3>Login Required</h3>
+            <input type="text" id="username" placeholder="Instagram Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="loginInstagram()">Login</button>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h3>Results</h3>
+            <div id="profile-info"></div>
+            <div id="posts-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
